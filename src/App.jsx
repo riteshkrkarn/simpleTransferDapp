@@ -241,12 +241,13 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="h-[32rem] w-[28rem] m-auto flex flex-col items-start justify-evenly border-4 p-6">
-        <h1 className="text-center font-bold text-xl underline p-2 w-full">
-          Simple Transfer App
-        </h1>
-        <div className="h-3/25 flex flex-col justify-between w-full mb-4">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      style={{ backgroundImage: "url('/bg.jpg')" }}
+    >
+      <div className="backdrop-blur-md bg-black/50 text-white p-8 w-[28rem] h-[32rem] flex flex-col justify-evenly items-start">
+        <h1 className="text-center font-bold text-[30px] w-full">Simple Transfer App</h1>
+        <div className="flex flex-col w-full mb-4">
           <p className="font-medium">
             Connected Account: <span className="font-normal">{account}</span>
           </p>
@@ -260,39 +261,36 @@ const App = () => {
             value={depositAmount}
             onChange={(e) => setDepositAmount(e.target.value)}
             placeholder="Deposit Amount"
-            className="border p-1 flex-1"
+            className="rounded border text-gray-200 h-[35px] pl-4 flex-1 "
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="p-1 px-2 border rounded-2xl cursor-pointer"
+            className="w-24 ml-1 border text-white border-white bg-white/20 hover:bg-white/30 rounded-xl transition"
           >
             Deposit
           </button>
         </form>
-        <form
-          onSubmit={handleTransfer}
-          className="w-full flex flex-col gap-2 mb-2"
-        >
+        <form onSubmit={handleTransfer} className="w-full flex flex-col gap-2 mb-2">
           <input
             type="text"
             value={recipientAddress}
             onChange={(e) => setRecipientAddress(e.target.value)}
             placeholder="Recipient Address"
-            className="border p-1 w-[312px] mb-2"
+            className="rounded border h-[35px] mb-3 pl-4 w-69 text-gray-200"
           />
-          <div className="w-full flex gap-2">
+          <div className="flex gap-2 w-full">
             <input
               type="text"
               value={transferAmount}
               onChange={(e) => setTransferAmount(e.target.value)}
               placeholder="Transfer Amount"
-              className="border p-1 flex-1"
+              className="rounded border h-[35px] pl-4 flex-1 text-gray-200"
             />
             <button
               type="submit"
               disabled={isLoading}
-              className="p-1 px-2 border rounded-2xl cursor-pointer"
+              className="w-24 ml-1 border text-white border-white bg-white/20 hover:bg-white/30 rounded-xl transition"
             >
               Transfer
             </button>
@@ -304,21 +302,22 @@ const App = () => {
             value={withdrawAmount}
             onChange={(e) => setWithdrawAmount(e.target.value)}
             placeholder="Withdraw Amount"
-            className="border p-1 flex-1"
+            className="rounded border h-[35px] pl-4 flex-1 text-gray-200"
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="p-1 px-2 border rounded-2xl cursor-pointer"
+            className="w-24 ml-1 border text-white border-white bg-white/20 hover:bg-white/30 rounded-xl transition"
           >
             Withdraw
           </button>
         </form>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        {txHash && <p>Transaction Hash: {txHash}</p>}
+        {error && <p className="text-red-500 mt-2">{error}</p>}
+        {txHash && <p className="mt-2">Transaction Hash: {txHash}</p>}
       </div>
     </div>
   );
 };
 
 export default App;
+         
