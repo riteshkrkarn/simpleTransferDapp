@@ -2,7 +2,6 @@ pragma solidity ^0.8.0;
 // SPDX-License-Identifier: UNLICENSED
 
 contract SimpleTransfer {
-
     event Deposit(address to, uint256 amount);
     event Transfer(address indexed from, address indexed to, uint256 amount);
 
@@ -29,12 +28,12 @@ contract SimpleTransfer {
         emit Transfer(msg.sender, recipient, msg.value);
     }
 
-    function withdraw (uint amount) external {
+    function withdraw(uint amount) external {
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
         balances[msg.sender] -= amount;
 
-        (bool success,) = payable(msg.sender).call{value: amount}("");
+        (bool success, ) = payable(msg.sender).call{value: amount}("");
         require(success, "Transfer failed");
     }
 }
