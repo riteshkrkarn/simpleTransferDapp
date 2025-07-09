@@ -1,6 +1,6 @@
-# SimpleTransferDapp 🚀
+# Simple Transfer Dapp 🚀
 
-**SimpleTransferDapp** is a decentralized Ethereum application that demonstrates fundamental Web3 interactions. This DApp allows users to connect their MetaMask wallet and perform essential blockchain operations including deposits, transfers, balance checks, and withdrawals through a smart contract deployed on the Ethereum blockchain.
+**Simple Transfer Dapp** is a decentralized Ethereum application that demonstrates fundamental Web3 interactions. This DApp allows users to connect their MetaMask wallet and perform essential blockchain operations including deposits, transfers, balance checks, and withdrawals through a smart contract deployed on the Ethereum blockchain.
 
 Built as a learning project to understand Web3 development fundamentals using modern technologies like React.js, Solidity, Hardhat, Tailwind CSS, and Ethers.js.
 
