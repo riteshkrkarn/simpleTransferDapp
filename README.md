@@ -65,15 +65,42 @@ function getBalance(address account) external view returns (uint256)
 
 ## 📸 Application Interface
 
-![SimpleTransferDapp Interface](https://github.com/riteshkrkarn/simpleTransferDapp/blob/main/demo-screenshot.png)
+![SimpleTransferDapp Interface](./demo-screenshot.png)
 
-The interface features:
+_Beautiful dark-themed UI with gradient background and glassmorphism effects_
 
-- **Connected Account Display:** Shows current wallet address and balance
-- **Deposit Section:** Input field for depositing ETH
-- **Transfer Section:** Recipient address and amount inputs for transfers
-- **Withdraw Section:** Amount input for withdrawing funds
-- **Modern UI:** Dark theme with gradient background and glassmorphism effects
+### 🎨 UI Features Showcase
+
+The application features a stunning modern interface with:
+
+- **🌌 Cosmic Background:** Dynamic gradient with animated particle effects
+- **💎 Glassmorphism Design:** Semi-transparent cards with backdrop blur effects
+- **📱 Responsive Layout:** Clean, centered design that works on all devices
+- **🔗 Wallet Integration:** Real-time display of connected account and balance
+- **⚡ Interactive Elements:** Smooth hover effects and modern button styling
+
+### 🖥️ Interface Components
+
+- **Connected Account Display:**
+  - Shows truncated wallet address: `0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266`
+  - Real-time ETH balance: `0 ETH`
+- **Deposit Section:**
+  - Clean input field with placeholder: "Deposit Amount"
+  - Rounded button with hover effects: "Deposit"
+- **Transfer Section:**
+  - Recipient address input: "Recipient Address"
+  - Transfer amount input: "Transfer Amount"
+  - Action button: "Transfer"
+- **Withdraw Section:**
+
+  - Amount input field: "Withdraw Amount"
+  - Withdrawal button: "Withdraw"
+
+- **Design Elements:**
+  - **Color Scheme:** Deep purples and blues with cyan accents
+  - **Typography:** Clean, modern font with excellent readability
+  - **Visual Effects:** 3D wireframe mountains and floating particles
+  - **Card Design:** Translucent panels with subtle borders and shadows
 
 ---
 
